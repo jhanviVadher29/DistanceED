@@ -1,0 +1,28 @@
+{% extends "myappF23/base.html" %}
+
+{% block title %} stu_by_ins {% endblock %}
+
+{#{% block body_block%}#}
+
+{%if st_list %}
+<ul>
+    {% for st in st_list %}
+    <li>
+        {{st}}
+    </li>
+    {%endfor%}
+</ul>
+{%endif %}
+
+{%if course_list %}
+<ul>
+    {% for c in course_list %}
+    <li>
+        {{c.course}}
+    </li>
+    {%endfor%}
+</ul>
+{% endif %}
+
+
+{#{% endblock %}#}
